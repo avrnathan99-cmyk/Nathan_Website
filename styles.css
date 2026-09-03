@@ -37,7 +37,7 @@ footer{min-height:160px;border-top:1px solid rgba(255,255,255,.06);display:flex;
 }
 @media(max-width:520px){
  h1{font-size:52px}.hero-copy{font-size:16px}.method-grid,.expertise-grid{grid-template-columns:1fr}.method-card{min-height:auto}.expertise-grid article{min-height:auto}
- .brand-name{font-size:12px}.brand-sub{font-size:7px}.hero-grid{height:45%}
+ .brand-name{font-size:20px}.brand-sub{font-size:7px}.hero-grid{height:45%}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
 
