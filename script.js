@@ -1,3 +1,13 @@
+// Always open the homepage at the top instead of restoring an old anchor/scroll position.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+const openAtTop = () => {
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+};
+openAtTop();
+window.addEventListener('load', () => setTimeout(openAtTop, 0));
+window.addEventListener('pageshow', openAtTop);
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
