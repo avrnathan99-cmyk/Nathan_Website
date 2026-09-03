@@ -3,205 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Nathan Abraham Technologies — AI, autonomy, systems engineering, concept development and innovation.">
   <title>Nathan Abraham Technologies</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
-      height: 100%;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #ffffff;
-      background:
-        radial-gradient(circle at 50% 100%, rgba(27, 74, 105, 0.45), transparent 38%),
-        linear-gradient(180deg, #02060b 0%, #07111a 55%, #06111a 100%);
-      overflow: hidden;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      padding: 8vh 24px 5vh;
-    }
-
-    /* subtle technical grid */
-    .grid {
-      position: absolute;
-      left: -10%;
-      right: -10%;
-      bottom: -15%;
-      height: 55%;
-      opacity: 0.17;
-      background-image:
-        linear-gradient(rgba(119, 193, 224, 0.35) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(119, 193, 224, 0.35) 1px, transparent 1px);
-      background-size: 70px 70px;
-      transform: perspective(500px) rotateX(63deg);
-      transform-origin: center bottom;
-      mask-image: linear-gradient(to bottom, transparent, black 35%);
-    }
-
-    .monogram {
-      width: 52px;
-      height: 52px;
-      border: 1px solid rgba(255,255,255,0.55);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Georgia, serif;
-      font-size: 21px;
-      letter-spacing: 2px;
-      margin-bottom: 28px;
-    }
-
-    .name {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      font-size: clamp(28px, 4vw, 48px);
-      letter-spacing: 0.18em;
-      margin-left: 0.18em;
-    }
-
-    .technologies {
-      margin-top: 8px;
-      font-size: 12px;
-      letter-spacing: 0.55em;
-      margin-left: 0.55em;
-      color: #b5c2cb;
-    }
-
-    .tagline {
-      margin-top: 30px;
-      font-size: 12px;
-      letter-spacing: 0.22em;
-      color: #8fa0ad;
-    }
-
-    .divider {
-      width: 55px;
-      height: 1px;
-      background: #b9a27b;
-      margin: 38px 0 34px;
-    }
-
-    .message {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      font-size: clamp(27px, 4vw, 45px);
-      letter-spacing: 0.02em;
-    }
-
-    .coming {
-      margin-top: 14px;
-      font-size: 11px;
-      letter-spacing: 0.4em;
-      color: #b8c2c8;
-    }
-
-    .contact {
-      margin-top: auto;
-      position: relative;
-      z-index: 2;
-    }
-
-    .contact-label {
-      font-size: 10px;
-      letter-spacing: 0.35em;
-      color: #81909b;
-      margin-bottom: 12px;
-    }
-
-    .email {
-      color: #ffffff;
-      text-decoration: none;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 17px;
-      letter-spacing: 0.08em;
-      transition: opacity 0.25s ease;
-    }
-
-    .email:hover {
-      opacity: 0.65;
-    }
-
-    .footer {
-      margin-top: 28px;
-      font-size: 9px;
-      letter-spacing: 0.12em;
-      color: #52616c;
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        padding-top: 7vh;
-      }
-
-      .name {
-        font-size: 27px;
-        letter-spacing: 0.12em;
-      }
-
-      .technologies {
-        letter-spacing: 0.4em;
-      }
-
-      .tagline {
-        line-height: 1.8;
-      }
-
-      .message {
-        font-size: 29px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-  <main class="page">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nathan Abraham Technologies home">
+      <span class="brand-name">NATHAN ABRAHAM</span>
+      <span class="brand-sub">TECHNOLOGIES</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#vision">Vision</a>
+      <a href="#mission">Mission</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#work">Projects</a>
+      <a href="#insights">Insights</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </header>
 
-    <div class="grid"></div>
-
-    <div class="monogram">NA</div>
-
-    <h1 class="name">NATHAN ABRAHAM</h1>
-    <div class="technologies">TECHNOLOGIES</div>
-
-    <div class="tagline">
-      INNOVATION &nbsp;·&nbsp; AI &nbsp;·&nbsp; AUTONOMOUS SYSTEMS
-    </div>
-
-    <div class="divider"></div>
-
-    <h2 class="message">Something new is taking shape.</h2>
-    <div class="coming">WEBSITE COMING SOON</div>
-
-    <div class="contact">
-      <div class="contact-label">GET IN TOUCH</div>
-
-      <a class="email" href="mailto:nathan@nathan-abraham.com">
-        nathan@nathan-abraham.com
-      </a>
-
-      <div class="footer">
-        © 2026 NATHAN ABRAHAM TECHNOLOGIES
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">AI <span>·</span> AUTONOMY <span>·</span> SYSTEMS</p>
+        <h1>AI that leaves<br>the lab.</h1>
+        <p class="hero-copy">Turning advanced technology into practical capability<br class="desktop-only"> and real-world advantage.</p>
+        <a class="text-link" href="#vision">Explore <span>↓</span></a>
       </div>
-    </div>
+      <div class="signal-path" aria-hidden="true">
+        <span class="signal-node n1"></span><span class="signal-node n2"></span>
+        <span class="signal-node n3"></span><span class="signal-node n4"></span>
+        <span class="signal-node n5"></span>
+      </div>
+    </section>
 
+    <section class="section content-section" id="vision">
+      <div class="section-number">01</div>
+      <div class="section-inner two-column reveal">
+        <div>
+          <p class="section-label">Vision</p>
+          <h2>Technology matters<br>when it makes a difference.</h2>
+        </div>
+        <div class="prose">
+          <p>Technology creates value when it moves beyond ideas, demonstrations and algorithms — and starts solving real problems.</p>
+          <p>My focus is on bridging that gap: bringing AI, autonomy and advanced systems into the real world, where technology must perform, adapt and deliver measurable value.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section mission" id="mission">
+      <div class="section-number">02</div>
+      <div class="section-inner reveal">
+        <p class="section-label">Mission</p>
+        <h2>From complex challenges<br>to working solutions.</h2>
+        <p class="mission-lead">I help organizations turn technological possibilities into operational advantage.</p>
+        <p class="mission-copy">My approach begins with understanding the operational need and the people behind it. I explore alternative approaches, bring together systems thinking, technology and innovation, and work closely with customers and users throughout the process. Continuous dialogue and feedback help shape solutions that are relevant, practical and capable of delivering real value.</p>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <span>01</span><div class="method-icon target-icon"></div>
+            <h3>Understand</h3><h4>Connect with the real need.</h4>
+            <p>Understand the mission, environment, users and objectives that define success.</p>
+          </article>
+          <article class="method-card">
+            <span>02</span><div class="method-icon explore-icon"></div>
+            <h3>Explore</h3><h4>Discover the possibilities.</h4>
+            <p>Explore alternatives, compare approaches and uncover opportunities to create a stronger solution.</p>
+          </article>
+          <article class="method-card">
+            <span>03</span><div class="method-icon connect-icon"></div>
+            <h3>Connect</h3><h4>Shape it together.</h4>
+            <p>Engage customers and users throughout the process — sharing ideas, listening to feedback and evolving the solution together.</p>
+          </article>
+          <article class="method-card">
+            <span>04</span><div class="method-icon deliver-icon"></div>
+            <h3>Deliver</h3><h4>Turn ideas into capability.</h4>
+            <p>Bring technology, engineering and systems thinking together to create solutions that work in the real world.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="expertise">
+      <div class="section-number">03</div>
+      <div class="section-inner reveal">
+        <p class="section-label">Expertise</p>
+        <h2>Where technology meets<br>systems thinking.</h2>
+        <div class="expertise-grid">
+          <article><div class="line-icon ai-icon"></div><h3>AI &amp; Intelligent Systems</h3><p>Turning AI capabilities into useful functions within real systems.</p></article>
+          <article><div class="line-icon autonomy-icon"></div><h3>Autonomous Systems</h3><p>Shaping autonomy from sensing and decision-making through control, supervision and operations.</p></article>
+          <article><div class="line-icon systems-icon"></div><h3>Systems Engineering</h3><p>Connecting requirements, architecture, technologies and interfaces into a coherent whole.</p></article>
+          <article><div class="line-icon concept-icon"></div><h3>Concept Development</h3><p>Exploring alternatives and transforming challenges and opportunities into clear, actionable system concepts.</p></article>
+          <article><div class="line-icon strategy-icon"></div><h3>Innovation &amp; Technology Strategy</h3><p>Identifying technological opportunities and shaping practical paths from possibility to value.</p></article>
+          <article><div class="line-icon ops-icon"></div><h3>Operational Concepts</h3><p>Connecting technology with missions, users, workflows and the operational environment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section work" id="work">
+      <div class="section-number">04</div>
+      <div class="section-inner reveal">
+        <p class="section-label">Selected Work</p>
+        <h2>Turning ideas into systems.</h2>
+        <p class="section-intro">Selected concepts and projects demonstrating how complex technical and operational challenges can be shaped into coherent capability.</p>
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-visual autonomous"><div class="vehicle"></div><div class="scan"></div></div>
+            <div class="work-body"><span>CONCEPT</span><h3>Autonomous Operations</h3><p>From a single autonomous platform to a coordinated operational system.</p><a href="#connect">Explore <b>→</b></a></div>
+          </article>
+          <article class="work-card">
+            <div class="work-visual decisions"><div class="decision-net"></div></div>
+            <div class="work-body"><span>EXPLORATION</span><h3>AI for Complex Decisions</h3><p>Turning information into understanding — and understanding into action.</p><a href="#connect">Explore <b>→</b></a></div>
+          </article>
+          <article class="work-card">
+            <div class="work-visual system"><div class="system-rings"></div></div>
+            <div class="work-body"><span>CASE STUDY</span><h3>From Need to System</h3><p>Exploring alternatives. Shaping architecture. Building capability.</p><a href="#connect">Explore <b>→</b></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="insights">
+      <div class="section-number">05</div>
+      <div class="section-inner reveal">
+        <p class="section-label">Insights</p>
+        <h2>Ideas worth exploring.</h2>
+        <div class="insights-list">
+          <article><span>AI &amp; SYSTEMS</span><h3>AI That Leaves the Lab</h3><p>Why the real challenge of AI begins when algorithms meet people, systems and the real world.</p><a href="#connect">Read <b>→</b></a></article>
+          <article><span>AUTONOMY</span><h3>Autonomy Is More Than an Autonomous Vehicle</h3><p>Why sensing, decision-making, communications, supervision and operations must be designed as one system.</p><a href="#connect">Read <b>→</b></a></article>
+          <article><span>SYSTEMS THINKING</span><h3>The Value of Exploring Alternatives</h3><p>How exploring different approaches early can create stronger architectures and unexpected opportunities.</p><a href="#connect">Read <b>→</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section connect-section" id="connect">
+      <div class="connect-glow" aria-hidden="true"></div>
+      <div class="section-inner connect-inner reveal">
+        <p class="section-label">Connect</p>
+        <h2>Have a difficult problem<br>worth solving?</h2>
+        <p>Whether you're exploring a new technology, shaping an intelligent or autonomous system, or looking for a different approach to a complex challenge — I'd be glad to explore it with you.</p>
+        <a class="cta" href="mailto:nathan@nathan-abraham.com">Start a conversation <span>→</span></a>
+        <a class="email-link" href="mailto:nathan@nathan-abraham.com">nathan@nathan-abraham.com</a>
+      </div>
+    </section>
   </main>
 
+  <footer>
+    <a class="brand footer-brand" href="#home"><span class="brand-name">NATHAN ABRAHAM</span><span class="brand-sub">TECHNOLOGIES</span></a>
+    <p>AI · AUTONOMY · SYSTEMS</p>
+    <p>© 2026 Nathan Abraham Technologies</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
